@@ -1,0 +1,73 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: email_id
+  examples: |
+    - [abc@gmail.com]{"entity":"email","value":"abc@gmail.com"}
+    - [chakreshmehroliya@gmail.com]{"entity":"email","value":"chakreshmehroliya@gmail.com"}
+    - [abc@yourdomain]{"entity":"email","value":"abc@yourdomain"}
+    - @gmail.com
+    - [xyz@gmail.com]{"entity":"email","value":"xyz@gmail.com"}
+    - [xyz@gmail.com]{"entity":"email","value":"xyz@gmail.com"}
+- intent: user_name
+  examples: |
+    - [chakresh]{"entity":"name","value":"chakresh"}
+    - [ramesh]{"entity":"name","value":"ramesh"}
+    - [ABC]{"entity":"name","value":"ABC"}

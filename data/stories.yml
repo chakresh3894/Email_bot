@@ -1,0 +1,16 @@
+version: "2.0"
+
+stories:
+
+- story: email story 
+  steps:
+  - intent: greet
+  - action: utter_askname
+  - intent: user_name
+  - slot_was_set:
+      - name: "chakresh"
+  - action: utter_askemail
+  - slot_was_set:
+      - email: 'chakreshmehroliya@gmail.com'
+  - intent: email_id
+  - action: action_email
